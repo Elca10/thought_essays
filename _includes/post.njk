@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+<article class="post">
+  <h1>{{ title }}</h1>
+  {% if date %}<p class="post-date">{{ date | readableDate }}</p>{% endif %}
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
+  <p class="back-link"><a href="/">&larr; Back to all essays</a></p>
+</article>
