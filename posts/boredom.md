@@ -1,7 +1,7 @@
 ---
    layout: post.njk
    title: Boredom
-   date: 2026-06-15
+   date: 2026-06-13
    summary: Boredom is becoming a forgotten skill. 
 ---
 
