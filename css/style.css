@@ -6,6 +6,7 @@
   --accent: #dc143c;
   --border: #2a2a2a;
   --max-width: 680px;
+  --home-max-width: 960px;
 }
 
 * {
@@ -29,6 +30,10 @@ main,
   margin: 0 auto;
 }
 
+body.home main {
+  max-width: var(--home-max-width);
+}
+
 .site-header {
   padding-top: 2rem;
   padding-bottom: 1rem;
@@ -45,11 +50,7 @@ main,
 
 .site-title:hover {
   color: var(--accent);
-}
-
-.site-tagline {
-  color: var(--muted);
-  margin: 0.5rem 0 0;
+  background-color: transparent;
 }
 
 main {
@@ -100,7 +101,6 @@ a {
 a:hover {
   color: var(--bg);
   background-color: var(--accent);
-  text-decoration-color: var(--accent);
 }
 
 .back-link {
@@ -121,60 +121,21 @@ a:hover {
   color: var(--bg);
 }
 
-.post-list {
-  list-style: none;
-  padding: 0;
+/* Home grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
 }
 
-.post-list-item {
-  padding: 1.25rem;
-  margin-bottom: 1.25rem;
-  border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
-  border-radius: 4px;
-  background: var(--bg-raised);
-}
-
-.post-list-item a {
-  font-size: 1.15rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--text);
-}
-
-.post-list-item a:hover {
-  color: var(--accent);
-  background-color: transparent;
-}
-
-.post-list-date {
-  display: block;
-  color: var(--muted);
-  font-size: 0.8rem;
-  margin-top: 0.35rem;
-}
-
-.post-list-summary {
-  color: #c4c4c4;
-  margin-top: 0.6rem;
-  margin-bottom: 0;
-  font-size: 0.95rem;
-}
-
-.comments {
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.home-hero {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid var(--accent);
+.grid-header {
+  padding: 1.5rem 0.5rem;
+  align-self: center;
 }
 
 .home-title {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   margin: 0 0 0.5rem;
   border-left: none;
   padding-left: 0;
@@ -184,7 +145,117 @@ a:hover {
 .home-subtitle {
   color: var(--muted);
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Search */
+.search-wrapper {
+  grid-column: 1 / -1;
+}
+
+#search {
+  width: 100%;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+#search:focus {
+  border-color: var(--accent);
+}
+
+#search::placeholder {
+  color: var(--muted);
+}
+
+#no-results {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  padding: 1rem 0;
+}
+
+.home-grid.is-searching {
+  grid-template-columns: 1fr;
+}
+
+.home-grid.is-searching .search-wrapper {
+  order: 1;
+}
+
+.home-grid.is-searching .card {
+  order: 2;
+}
+
+.home-grid.is-searching #no-results {
+  order: 3;
+}
+
+.home-grid.is-searching a.card--featured {
+  padding: 1.5rem;
+}
+
+.home-grid.is-searching a.card--featured .card-title {
+  font-size: 1.1rem;
+}
+
+/* Cards */
+a.card {
+  display: block;
+  background-color: rgba(220, 20, 60, 0.18);
+  border: 2px solid rgba(220, 20, 60, 0.5);
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+a.card:hover {
+  background-color: rgba(220, 20, 60, 0.32);
+  border-color: rgba(220, 20, 60, 0.85);
+  color: var(--text);
+}
+
+a.card--featured {
+  padding: 2.25rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.4rem;
+  color: var(--text);
+}
+
+a.card--featured .card-title {
+  font-size: 1.45rem;
+  margin-bottom: 0.6rem;
+}
+
+.card-date {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-summary {
+  color: #c4c4c4;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Comments */
+.comments {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
 }
 
 .site-footer {
@@ -192,4 +263,20 @@ a:hover {
   color: var(--muted);
   font-size: 0.8rem;
   border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+/* Mobile: single column list */
+@media (max-width: 640px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  a.card--featured {
+    padding: 1.5rem;
+  }
+
+  a.card--featured .card-title {
+    font-size: 1.1rem;
+  }
 }

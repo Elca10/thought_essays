@@ -10,17 +10,19 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="{{ bodyClass or '' }}">
+  {% if page.url != "/" %}
   <header class="site-header">
     <a href="/" class="site-title">Thought Essays</a>
   </header>
+  {% endif %}
 
   <main>
     {{ content | safe }}
   </main>
 
   <footer class="site-footer">
-    <p>Thanks for reading.</p>
+    <p>Thanks for reading!</p>
   </footer>
 </body>
 </html>

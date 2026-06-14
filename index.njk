@@ -1,18 +1,73 @@
 ---
 layout: base.njk
 title: Thought Essays
+bodyClass: home
 ---
-<div class="home-hero">
-  <h1 class="home-title">Thought Essays</h1>
-  <p class="home-subtitle">A little blog for my big thoughts :D</p>
+<div class="home-grid">
+  <div class="grid-header">
+    <h1 class="home-title">Thought Essays</h1>
+    <p class="home-subtitle">A little blog for my big thoughts :D</p>
+  </div>
+
+  {% if collections.posts.length > 0 %}
+    {% set featured = collections.posts[0] %}
+    <a href="{{ featured.url }}" class="card card--featured" data-url="{{ featured.url }}">
+      <h2 class="card-title">{{ featured.data.title }}</h2>
+      {% if featured.data.date %}<span class="card-date">{{ featured.data.date | readableDate }}</span>{% endif %}
+      {% if featured.data.summary %}<p class="card-summary">{{ featured.data.summary }}</p>{% endif %}
+    </a>
+  {% endif %}
+
+  <div class="search-wrapper">
+    <input type="search" id="search" placeholder="Search essays..." autocomplete="off">
+  </div>
+
+  {% for post in collections.posts %}
+    {% if not loop.first %}
+      <a href="{{ post.url }}" class="card" data-url="{{ post.url }}">
+        <h2 class="card-title">{{ post.data.title }}</h2>
+        {% if post.data.date %}<span class="card-date">{{ post.data.date | readableDate }}</span>{% endif %}
+        {% if post.data.summary %}<p class="card-summary">{{ post.data.summary }}</p>{% endif %}
+      </a>
+    {% endif %}
+  {% endfor %}
+
+  <p id="no-results" style="display:none;">No essays found.</p>
 </div>
 
-<ul class="post-list">
+<script>
+const POSTS = [
   {% for post in collections.posts %}
-  <li class="post-list-item">
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
-    {% if post.data.date %}<span class="post-list-date">{{ post.data.date | readableDate }}</span>{% endif %}
-    {% if post.data.summary %}<p class="post-list-summary">{{ post.data.summary }}</p>{% endif %}
-  </li>
+  {
+    url: {{ post.url | dump | safe }},
+    title: {{ post.data.title | dump | safe }},
+    summary: {{ (post.data.summary or "") | dump | safe }},
+    content: {{ post.templateContent | dump | safe }}
+  }{% if not loop.last %},{% endif %}
   {% endfor %}
-</ul>
+];
+
+const input = document.getElementById('search');
+const grid  = document.querySelector('.home-grid');
+const noResults = document.getElementById('no-results');
+
+input.addEventListener('input', () => {
+  const q = input.value.toLowerCase().trim();
+
+  grid.classList.toggle('is-searching', q.length > 0);
+
+  let anyVisible = false;
+  document.querySelectorAll('.card').forEach(card => {
+    const post = POSTS.find(p => p.url === card.dataset.url);
+    if (!post) return;
+    const text = (post.title + ' ' + post.summary + ' ' + post.content)
+      .replace(/<[^>]*>/g, '')
+      .toLowerCase();
+    const matches = !q || text.includes(q);
+    card.style.display = matches ? '' : 'none';
+    if (matches) anyVisible = true;
+  });
+
+  noResults.style.display = (q && !anyVisible) ? '' : 'none';
+});
+</script>
