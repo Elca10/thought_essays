@@ -1,10 +1,9 @@
 ---
-   layout: post.njk
-   title: Death
-   date: 2026-06-14
-   summary: Are you ready to die? 
+layout: post.njk
+title: Death
+date: 2026-06-14
+summary: Are you ready to die?
 ---
-**Death**
 
 I’m chuckling to myself as I sit here looking at this page with nothing but the word “death,” in bold. 
 
@@ -12,7 +11,7 @@ It’s a not particularly cheery, arguably morbid sight by definition.
 
 But is it?
 
-We’re so accustomed to seeing death as this scary, almost taboo, dark and looming subject, a mindset that I fundamentally disagree with. Seeing death in a negative light is particularly prevalent in the US, I fear. I admire the cultures that have ways of celebrating and normalizing it, like with Día de los Muertos. 
+We’re so accustomed to seeing death as this scary, almost taboo, dark and looming subject, a mindset that I fundamentally disagree with. Seeing death in a negative light is particularly prevalent in the US, I fear. I admire the cultures that have ways of celebrating and dnormalizing it, like with Día de los Muertos. 
 
 Here’s my proposal: acceptance should start right away. If you wait until you’re old to start accepting the fact that you’re going to die, it’s too late. 
 
