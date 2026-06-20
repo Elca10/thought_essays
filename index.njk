@@ -9,8 +9,15 @@ bodyClass: home
     <p class="home-subtitle">A little blog for my big thoughts :D</p>
   </div>
 
-  {% if collections.posts.length > 0 %}
-    {% set featured = collections.posts[0] %}
+  {% set featured = null %}
+  {% for post in collections.posts %}
+    {% if post.data.featured and not featured %}
+      {% set featured = post %}
+    {% endif %}
+  {% endfor %}
+  {% if not featured %}{% set featured = collections.posts[0] %}{% endif %}
+
+  {% if featured %}
     <a href="{{ featured.url }}" class="card card--featured" data-url="{{ featured.url }}">
       <h2 class="card-title">{{ featured.data.title }}</h2>
       {% if featured.data.date %}<span class="card-date">{{ featured.data.date | readableDate }}</span>{% endif %}
@@ -23,7 +30,7 @@ bodyClass: home
   </div>
 
   {% for post in collections.posts %}
-    {% if not loop.first %}
+    {% if post.url != featured.url %}
       <a href="{{ post.url }}" class="card" data-url="{{ post.url }}">
         <h2 class="card-title">{{ post.data.title }}</h2>
         {% if post.data.date %}<span class="card-date">{{ post.data.date | readableDate }}</span>{% endif %}
