@@ -10,3 +10,5 @@ I'm a thinker. I'm also an avid conversationalist. Put those two together and yo
 
 P.S. Please please please engage! Feel free to disagree, push back, or take an idea further. I *want* to hear your thoughts.
 
+P.P.S. While this site was built with help from Claude, all writing is entirely my own work.
+
