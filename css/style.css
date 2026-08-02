@@ -81,6 +81,11 @@ h1 {
   margin-bottom: 1.4rem;
 }
 
+.post-content p > strong:first-child,
+.post-content li > strong:first-child {
+  color: var(--accent);
+}
+
 .post-content code {
   background: var(--bg-raised);
   border: 1px solid var(--border);
