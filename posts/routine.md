@@ -1,0 +1,24 @@
+---
+layout: post.njk
+title: Routine
+date: 2026-08-02
+summary: The magic pill for getting shit done
+---
+
+My family is admittedly a bit *crazy* at times, and so in classic crazy fashion, our family vacay involved removing ourselves from the grid. We went to a cabin *wayyy* up in Northern Washington where there was no cell connection and spotty at best wifi and dedicated ourselves to creative and intellectual pursuits. My mom wanted to go fully no tech, but my dad and I had lots of such pursuits that required tech (recording music, listening to audiobooks, journaling, etc), but we agreed to disconnect from the internet. 
+
+I was actually excited to be disconnected \- I’m not one for texting (I could and probably will write an essay on that) \- and it was an unrestricted time to work on my neverending list of personal projects and books to read. I did not expect my creative and intellectual output to *decrease*, and definitely not by as much as it did. Within two days I found myself struggling to do *anything* or to have *anything* to talk about. The only thing I had motivation for was to get out of bed and make a cup of tea because I couldn’t break my tea drinking streak.
+
+Why is it that a week+ of unadulterated time to create and think ended up being my least creative and thought provoking week of the summer? *No freaking routine.* The removal of the internet removed what little I had left of my tried and true routine since school ended. I’ve worked hard to find a balance of just the right types of activities and intellectual projects that optimize my life, and although I certainly didn’t miss the pressures of everyday texting and emailing, I did miss my routine-building-block projects, which happen to be internet-dependent. 
+
+I’ve known for ages that routine is important, but if there’s one thing I’ve learned during this relatively routine-less summer is that it is SO important. I’ve experienced a distinct lack of output in the last seven weeks, as compared to my usual levels of productivity and life-living. Following are some of my sub-learnings, if you will. 
+
+**Routine is essential for getting the ball rolling and keeping it rolling.** The first week that I was at home after school ended was actually great. I still had the motivation ball rolling from school (although I was burned out for sure on academic things), and had newfound free time to start on my personal projects. This website and my first several thought essays are a product of that. Without routine to help me keep it going though, I’ve since severely decreased in my productivity. 
+
+**Routine and habits are related, but not the same.** My plans for this summer involved \~8 mini trips/living locations, and so I came into this summer knowing that I was going to be craving routine. As such, I decided on some flexible things I could do every day like drinking a cup of tea in the mornings and spending time outside. As it turns out, I am *great* at building habits (especially when they’re streak motivated \- I’ve had a cup of tea 52 days in a row), but these little things aren’t big enough to count as a routine.
+
+**Routine doesn’t mean doing the same things every day.** Even during the school year where I didn’t *feel* like I had a routine because my life was so freaking hectic (impossibly unpredictable band practice and show schedules, spontaneous friend hangouts, variations in homework difficulties, adding a partner to my life, etc), I did have one. In fact I had just the perfect amount of routine to have room for spontaneity to keep things fresh, but also enough of one to assuage the demands of everyday life. The key thing was to have some consistency in the *types* of things I did every day and the time of day I did them. (Example: School in the morning/afternoon, homework between classes, some sort of music or hangout activity in the evenings.)
+
+**Self-enforced routines are hard (at least for me).** Also I learned that I personally don’t do well with self-enforced routines. School and work are so wonderful for routine building (school in particular because it’s not a giant eight hour chunk \- I probably will write an essay on why I think that is such a terrible way to expect work to get done, I’ve hinted at it in my essay on boredom). They add almost “creative constraints” to my day \- stuff that I want/need to do, but don’t have the power to reschedule. 
+
+**Routines free up space for creativity and thought.** I am a *huge* proponent of freeing up mental space as much as possible (you won’t catch me with a mental to-do list, it’s always written down so I don’t have to think about it). I’ve been feeling the added mental friction from my lack of routine (in both how I spend my time and also my physical spaces). Instead of spending time thinking about things like “where tf is my laptop” or “what do I want to do in the morning,” I can spend time thinking about what to write next. :D
