@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Specialization
-date: 2026-08-02
+date: 2026-08-02T23:06:36Z
 summary: Specialization is becoming unreachable
 ---
 

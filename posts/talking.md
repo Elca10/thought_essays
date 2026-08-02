@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Talking
-date: 2026-06-20
+date: 2026-06-20T18:07:08Z
 summary: Talking at, talking to, talking with.
 ---
 

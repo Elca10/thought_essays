@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Noise
-date: 2026-07-24
+date: 2026-07-24T05:40:00Z
 summary: And why we seem to need it
 ---
 

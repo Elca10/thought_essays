@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Routine
-date: 2026-08-02
+date: 2026-08-02T05:27:43Z
 summary: The magic pill for getting shit done
 ---
 

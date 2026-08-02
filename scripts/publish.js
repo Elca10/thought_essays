@@ -4,7 +4,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const postsDir = path.join(__dirname, '..', 'posts');
-const today    = new Date().toISOString().split('T')[0];
+const today    = new Date().toISOString();
 
 const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.md'));
 let changed  = false;

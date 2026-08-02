@@ -229,6 +229,12 @@ a.card:hover {
 
 a.card--featured {
   padding: 2.25rem;
+  background-color: rgba(220, 20, 60, 0.3);
+  border-color: rgba(220, 20, 60, 0.7);
+}
+
+a.card--featured:hover {
+  background-color: rgba(220, 20, 60, 0.42);
 }
 
 .card-title {
@@ -254,6 +260,9 @@ a.card--featured .card-title {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Comments */

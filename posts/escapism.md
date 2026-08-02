@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Escapism
-date: 2026-07-24
+date: 2026-07-24T05:41:00Z
 summary: The art of escaping
 ---
 
