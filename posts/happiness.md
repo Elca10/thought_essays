@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Happiness
-date: 2026-06-20
+date: 2026-06-20T17:04:33Z
 summary: Happiness is a choice.
 ---
 
