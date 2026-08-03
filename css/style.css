@@ -261,9 +261,11 @@ a.card--featured .card-title {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.6;
-  white-space: nowrap;
+  min-height: calc(1.6em * 2);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* Comments */
