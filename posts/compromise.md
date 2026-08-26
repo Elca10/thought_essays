@@ -25,6 +25,6 @@ I think we’re also losing proficiency in person-to-person compromise. The skil
 
 Continuation, as per a follow up conversation with Laurel prior to publishing (Thanks Laurel for sanity checking my writing and chatting\!\!):
 
-Inability to/discomfort with compromise seems particularly prevalent in the US because of the American focus on individuality and freedom of choice. The idea of freed is literally tied to our ability to choose… so it’s no wonder we (collectively) hold it at a higher value than making decisions that benefit others more. 
+Inability to/discomfort with compromise seems particularly prevalent in the US because of the American focus on individuality and freedom of choice. The idea of freedom is literally tied to our ability to choose… so it’s no wonder we (collectively) hold it at a higher value than making decisions that benefit others more. 
 
 Also with the ridiculous levels of customization and algorithmic curation we get on our phones, it’s so much easier to turn to them rather than face the discomfort of talking to someone where we run the risk of thinking about something that we don’t want to be.
